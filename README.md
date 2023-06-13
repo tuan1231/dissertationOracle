@@ -11,7 +11,7 @@ g
 
 fg
 
-fg
+
 f
 g
 fg
