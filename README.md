@@ -2,7 +2,7 @@ hhgjh
 hjhjhjh
 jj
 h
-ffg\
+ff
 fgfg
 GHGFHJG
 HJFDGHJFGJ
