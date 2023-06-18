@@ -1,6 +1,6 @@
 hhg
 hjhj
-GHG
+GH
 HJFDGHJFG
 FHJDHFGD
 jhfjhdh
