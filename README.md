@@ -3,7 +3,6 @@ dm
 fd
 ghff
 hjghff
-fgjhfgj
-gjfgh
+fgjhf
 texgjfhgjh
 latex
