@@ -4,4 +4,3 @@ fd
 ghff
 hjghff
 latex
-tex
