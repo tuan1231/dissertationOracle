@@ -3,4 +3,3 @@ dm
 fd
 ghff
 hjghff
-latex
