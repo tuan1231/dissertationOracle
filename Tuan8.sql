@@ -57,3 +57,32 @@ IF v_DTB>=1 THEN
     DBMS_OUTPUT.PUT_LINE('Đề tài ' || V_TENDT || ' này có điểm trung bình ' || V_DTB || ' điểm.');
 END IF;
 END;
+------------------------------------------------------------------------------------------------------
+/*CAU 5.4.3*/
+CREATE OR REPLACE PROCEDURE P_554_CAU3
+(
+	p_TENGV		IN		GIAOVIEN.TENGV%TYPE,
+	p_SDT		OUT		GIAOVIEN.SODT%TYPE
+)
+AS
+BEGIN
+	SELECT SODT INTO p_SDT
+	FROM GIAOVIEN
+	WHERE TENGV LIKE '%' || p_TENGV || '%'; -- Sửa lỗi ở đây: Phải ghép chuỗi p_TENGV vào mẫu tìm kiếm
+	
+	EXCEPTION
+		WHEN NO_DATA_FOUND THEN
+			DBMS_OUTPUT.PUT_LINE('Ten GV: '|| p_TENGV ||' khong ton tai');
+END P_554_CAU3;
+/
+DECLARE
+	p_TENCTHD		GIAOVIEN.TENGV%TYPE;
+	p_SDT			GIAOVIEN.SODT%TYPE;
+BEGIN
+	P_554_CAU3('HIU PHAN', p_SDT);
+	DBMS_OUTPUT.PUT_LINE('Số điện thoại của ' || 'HIU PHAN' || ' là: ' || p_SDT);
+END;
+
+
+
+SELECT * FROM GIAOVIEN
